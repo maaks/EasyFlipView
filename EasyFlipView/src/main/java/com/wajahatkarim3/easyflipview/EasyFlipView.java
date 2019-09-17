@@ -289,12 +289,10 @@ public class EasyFlipView extends FrameLayout {
 
                     if (mFlipState == FlipState.FRONT_SIDE) {
                         mCardBackLayout.setVisibility(GONE);
-                        mCardFrontLayout.setVisibility(VISIBLE);
 
                         if (onFlipListener != null)
                             onFlipListener.onViewFlipCompleted(EasyFlipView.this, FlipState.FRONT_SIDE);
                     } else {
-                        mCardBackLayout.setVisibility(VISIBLE);
                         mCardFrontLayout.setVisibility(GONE);
 
                         if (onFlipListener != null)

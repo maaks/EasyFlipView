@@ -371,7 +371,7 @@ public class EasyFlipView extends FrameLayout {
         } else {
             if (mSetTopOut.isRunning() || mSetBottomIn.isRunning()) return;
 
-            
+
 
             if (mFlipState == FlipState.FRONT_SIDE) {
                 // From front to back

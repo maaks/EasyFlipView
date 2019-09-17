@@ -288,12 +288,12 @@ public class EasyFlipView extends FrameLayout {
                 public void onAnimationEnd(Animator animator) {
 
                     if (mFlipState == FlipState.FRONT_SIDE) {
-                        mCardBackLayout.setVisibility(GONE);
+
 
                         if (onFlipListener != null)
                             onFlipListener.onViewFlipCompleted(EasyFlipView.this, FlipState.FRONT_SIDE);
                     } else {
-                        mCardFrontLayout.setVisibility(GONE);
+
 
                         if (onFlipListener != null)
                             onFlipListener.onViewFlipCompleted(EasyFlipView.this, FlipState.BACK_SIDE);
@@ -349,8 +349,7 @@ public class EasyFlipView extends FrameLayout {
         if (flipType.equalsIgnoreCase("horizontal")) {
             if (mSetRightOut.isRunning() || mSetLeftIn.isRunning()) return;
 
-            mCardBackLayout.setVisibility(VISIBLE);
-            mCardFrontLayout.setVisibility(VISIBLE);
+
 
             if (mFlipState == FlipState.FRONT_SIDE) {
                 // From front to back
@@ -372,8 +371,7 @@ public class EasyFlipView extends FrameLayout {
         } else {
             if (mSetTopOut.isRunning() || mSetBottomIn.isRunning()) return;
 
-            mCardBackLayout.setVisibility(VISIBLE);
-            mCardFrontLayout.setVisibility(VISIBLE);
+            
 
             if (mFlipState == FlipState.FRONT_SIDE) {
                 // From front to back

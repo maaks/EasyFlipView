@@ -22,7 +22,6 @@ ext {
     gitUrl = 'https://github.com/wajahatkarim3/EasyFlipView.git'
 
     libraryVersion = '2.1.3'
-
     developerId = 'wajahatkarim3'
     developerName = 'Wajahat Karim'
     developerEmail = 'wajahatkarim3@gmail.com'
